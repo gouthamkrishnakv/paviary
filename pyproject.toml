@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "paviary"
+version = "0.1.0"
+description = ""
+authors = ["Goutham Krishna K V <gauthamkrishna9991@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+msgpack = "^1.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
