@@ -23,7 +23,3 @@ class Serializable(Protocol):
         val["id"] = str(self.id)
         val["timestamp"] = self.timestamp.isoformat()
         return val
-
-    @staticmethod
-    def decode(data: dict[str, Any]) -> "Serializable":
-        ...

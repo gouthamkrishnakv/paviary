@@ -1,22 +1,13 @@
-from dataclasses import dataclass, field
-from datetime import datetime
-from typing import Any
-from uuid import UUID, uuid4
+from dataclasses import dataclass
 
 from paviary.models.serializable import Serializable
+
 
 @dataclass
 class Notification(Serializable):
     # Title of the notification
     title: str
     description: str
-
-    @staticmethod
-    def decode(data: dict[str, Any]) -> "Notification":
-        """
-        Decodes Notification
-        """
-        return Notification(**data)
 
     # def show(self):  # OR DISPLAY
     #     """
